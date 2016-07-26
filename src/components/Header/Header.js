@@ -13,12 +13,14 @@ import s from './Header.css';
 import Link from '../Link';
 import Navigation from '../Navigation';
 import logoUrl from './logo-small.png';
+import { Button } from 'react-toolbox/lib/button';
 
 function Header() {
   return (
     <div className={s.root}>
       <div className={s.container}>
         <Navigation className={s.nav} />
+        <Button label="Hello World!" />
         <Link className={s.brand} to="/">
           <img src={logoUrl} width="38" height="38" alt="React" />
           <span className={s.brandTxt}>Your Company</span>
